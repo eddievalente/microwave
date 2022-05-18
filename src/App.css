@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+.container {
+  width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 400px 200px;
+  place-items: center;
+  margin-top: 5rem;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.stinicio {
+  background: rgb(66,66,66);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.strunning {
+  background: rgb(100,0,0);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.stended {
+  background: rgb(0,100,0);
+}
+
+.tela {
+  width: 100%;
+  height: 300px;
+  display:grid;
+  place-items: center;
+  background: white;
+  border: solid 3px red;
+  border-radius: 10px;
+}
+
+.tela img {
+   height: 200px;
+}
+
+.turnedon {
+  background: yellow;
+}
+
+.panel {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  place-items: start;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.time {
+  font-size: 5rem;
+  margin-bottom: 1rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons button {
+  width: 85%;
+  display: block;
+  padding: 0.8rem;
+  border: none;
+  margin: 0;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 300ms ease-in-out;
+  transform: translateY(0);
 }
+
+.buttons button:hover {
+  transform: translateY(-2px);
+}
+
+.start {
+  float: left;
+  background: #3ed927;
+  color: white;
+}
+
+.reset {
+  float: right;
+  background: #fd7171;
+  color: white;
+}
+
